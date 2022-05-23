@@ -9,6 +9,7 @@ const Card = ({ book }) => {
     return (
         <>
             {
+                // eslint-disable-next-line array-callback-return
                 book.map((item) => {
                     let thumbnail=item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
                     let category=item.volumeInfo&& item.volumeInfo.categories;
