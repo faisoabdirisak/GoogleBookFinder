@@ -14,7 +14,7 @@ const Card = ({ book }) => {
                     let category=item.volumeInfo&& item.volumeInfo.categories;
                     let title=item.volumeInfo && item.volumeInfo.title;
                     // let info=item.volumeInfo.industryIdentifiers && item.volumeInfo.industryIdentifiers.infoLink;
-                    if(thumbnail !== undefined && category!=undefined){
+                    if(thumbnail !== undefined && category!==undefined){
                         return (
                             <>
                             <div className='card' onClick={()=>{setShow(true); setItem(item)}} >
